@@ -1,7 +1,7 @@
 {
   "name": "minesweeper-test-task",
   "version": "0.1.0",
-  "homepage": "https://kamiv1980.github.io/minesweeper-test-task",
+  "homepage": "https://kamiv1980.github.io",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
