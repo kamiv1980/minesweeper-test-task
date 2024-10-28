@@ -1,0 +1,61 @@
+.cell {
+    width: clamp(10px, 3vw, 40px);
+    aspect-ratio: 1;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-weight: bold;
+    color: #333;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.cell.revealed {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+    cursor: default;
+}
+
+.cell.flagged {
+    background-color: #ffedcc;
+    color: #d9534f;
+    cursor: pointer;
+}
+
+/* Colors for numbers based on adjacent mines */
+.cell.revealed[data-mines='1'] {
+    color: #1e90ff;
+}
+.cell.revealed[data-mines='2'] {
+    color: #32cd32;
+}
+.cell.revealed[data-mines='3'] {
+    color: #ff4500;
+}
+.cell.revealed[data-mines='4'] {
+    color: #8b0000;
+}
+.cell.revealed[data-mines='5'] {
+    color: #9932cc;
+}
+.cell.revealed[data-mines='6'] {
+    color: #20b2aa;
+}
+.cell.revealed[data-mines='7'] {
+    color: #000000;
+}
+.cell.revealed[data-mines='8'] {
+    color: #808080;
+}
+
+.cell:hover:not(.revealed) {
+    background-color: #d6d6d6;
+}
+
+.cell:active:not(.revealed) {
+    background-color: #cccccc;
+}

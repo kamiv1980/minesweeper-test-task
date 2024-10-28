@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    max-width: fit-content;
+    border: 2px solid #666;
+    background-color: #f8f8f8;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    gap: 4px;
+}
+
+@media (max-width: 600px) {
+    .board {
+        gap: 2px;
+        padding: 2px;
+    }
+
+    .row {
+        gap: 2px;
+    }
+}
